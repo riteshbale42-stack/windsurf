@@ -19,6 +19,19 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  background-color: var(--secondary-color);
+  color: black;
+}
+
+:root {
+  --primary-color: #011c42;
+  --secondary-color: #34e8bb;
+  --font-primary: "Windsurf primary";
+  --font-secondary: "Windsurf secondary";
+}
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -99,11 +112,188 @@ nav {
 }
 
 .box-1 {
-  background-color: aquamarine;
+  background-color:aquamarine ;
   height: 300px;
   width: 200px;
   position: absolute;
   top: 8vh;
   left: -4px;
   display: none;
+}
+/* hero section start */
+
+main {
+  height: 88vh;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 6vw;
+}
+
+main h1 {
+  color: white;
+  font-family: var(--font-primary);
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.main-options {
+  display: flex;
+  gap: 12px;
+  margin: 8vh 0;
+}
+
+.main-options button,
+.main-options a {
+  padding: 16px 32px;
+  border-radius: 2px;
+  font-family: var(--font-secondary);
+}
+
+.main-options button {
+  background-color: var(--secondary-color);
+  border: none;
+}
+
+.main-options a {
+  background-color: #ffffff33;
+}
+
+.main-subtext {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--font-secondary);
+}
+
+.main-subtext div {
+  height: 8px;
+  width: 8px;
+  background-color: var(--secondary-color);
+}
+
+ /* hero section-2 */
+
+.container {
+  background-color: #011c42;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  font-family: "Windsurf primary";
+}
+
+.container1 {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px solid rgba(82, 109, 134, 0.5);
+}
+
+.c1-p1 {
+  color: yellow;
+  padding-top: 360px;
+}
+
+.c1-p2 {
+  color: white;
+  font-family: "Windsurf primary";
+  font-size: 68px;
+}
+
+.c1-p3 {
+  padding: 60px 290px;
+  color: white;
+}
+
+.container2 {
+  padding-top: 60px;
+  display: flex;
+  color: white;
+  gap: 35px;
+}
+
+.c2-div1 {
+  width: 50%;
+}
+
+.c2-div1 {
+  font-size: 28px;
+}
+
+.c2-div2 {
+  width: 50%;
+}
+
+.c2-div2 a {
+  padding-top: 30px ;
+  color: rgb(251 156 229);
+  text-transform: uppercase;
+}
+
+.container3 video , .container6 video{
+  width: 1270px;
+
+  padding: 60px;
+  border-radius: 20px;
+  outline: #243c5e;
+  outline-width: 5px;
+}
+
+.container4 {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-bottom: 1px solid rgba(82, 109, 134, 0.5);
+  padding-bottom: 50px;
+}
+
+.c4-p1 {
+  padding-top: 40px;
+  font-size: 65px;
+
+  color: white;
+}
+
+.c4-p2 {
+  color: white;
+}
+
+.container5{
+  padding: 40px 0;
+  display: flex;
+  gap: 40px;
+}
+
+.c5-p1, .c5-p2{
+  width: 50%;
+
+}
+
+.c5-p1{
+  font-size: 30px;
+  color: white;
+}
+
+.c5-p2{
+  color: white;
+}
+
+.c5-p2 a{
+   color: rgb(251 156 229);
+   padding: 10px 0;
+}
+
+/*------------------section-grid------------------------*/
+.parent{
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+  height: 120vh;
+  background-color: white;
+
+}
+
+.child{
+  background-color: #011c42;
+  grid-auto-rows: 200px;
+  grid-template-columns: 200px 200px 200px 200px;
 }
